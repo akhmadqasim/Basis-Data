@@ -30,6 +30,6 @@ create table daftar_dosen
 desc daftar_dosen;
 show tables;
 insert into mahasiswa
-values (2211102441237, 'Akhmad Qasim', 'Perum Solong Durian', '2');
+values ('2211102441237', 'Akhmad Qasim', 'Perum Solong Durian', '2');
 select *
 from mahasiswa;
