@@ -22,10 +22,11 @@ alter table daftar_jurusan drop ketua_jurusan;
 desc daftar_jurusan;
 
 # Essay nomor 1
+use informatika;
 CREATE TABLE kegiatan_perkuliahan (
   id smallint PRIMARY KEY,
-  dosen varchar(50) NOT NULL,
-  mata_kuliah varchar(50) NOT NULL,
+  dosen smallint NOT NULL,
+  mata_kuliah smallint NOT NULL,
   kelas smallint NOT NULL,
   jumlah_mahasiswa smallint NOT NULL,
   jam_ke smallint NOT NULL,
@@ -33,3 +34,6 @@ CREATE TABLE kegiatan_perkuliahan (
 );
 
 # Essay nomor 2
+use informatika;
+alter table kegiatan_perkuliahan modify dosen mediumint;
+alter table kegiatan_perkuliahan modify mata_kuliah mediumint;
